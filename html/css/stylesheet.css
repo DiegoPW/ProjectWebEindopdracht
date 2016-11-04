@@ -1,0 +1,407 @@
+/* Font, dit stuk code heb ik van Victor Zumpolle zodat ik de fonts kan gebruiken op elke webbrowser*/
+
+@font-face {
+    font-family: dfds-bold;
+    src: url("font/dfds-bold.eot");
+    src: url("font/dfds-bold.eot?#iefix") format("embedded-opentype"), url("font/dfds-bold.woff") format("woff"), url("font/dfds-bold.ttf") format("truetype"), url("font/dfds-bold.svg#dfds-bold") format("svg");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dfds-light';
+    src: url("font/dfds-light.eot");
+    src: url("font/dfds-light.eot?#iefix") format("embedded-opentype"), url("font/dfds-light.woff") format("woff"), url("font/dfds-light.ttf") format("truetype"), url("font/dfds-light.svg#dfds_lightregular") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: #eaedee;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 4em;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 30%;
+}
+header a:nth-child(2){
+    font-family: DFDS-bold;
+    padding: 1em;
+    background-color: #9AD181;
+    padding: 0.5em 1em;
+    color: #fff;
+    box-shadow: 0px 2px 5px #000;
+
+}
+
+input[type=search] {
+  margin-top: 0.5em; 
+  margin-bottom: 2em;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  background-color: #fff;
+  color: #8a97a0;
+}
+
+#sorteer{
+    display: flex;
+}
+#sorteer > div {
+    width: 50%;
+}
+
+#sorteren, #filter {
+    font-family: DFDS-bold;
+    background-color: #9AD181;
+    padding: 0.5em 1em;
+    color: #fff;
+    box-shadow: 0px 2px 5px #000;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    font-size: 1em;
+}
+
+#sorteerlijst li, #filterlijst li {
+    padding: 1em;
+    background-color: #9AD181;
+    box-shadow: 0px 2px 5px #000;
+    margin: 0em 0.2em;
+    font-family: DFDS-light;
+    color: #fff; 
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+
+
+
+h1 {
+    font-family: dfds-bold;
+    color: #192B41;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+li {
+    display: inline;
+}
+
+.filter{
+   padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: #1A2B41;
+    font-family: dfds-light;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: dfds-bold;
+}
+
+p {
+    font-family: dfds-light;
+}
+
+footer{
+    margin-top: 2em;
+    padding: 2em;
+    background-color: #1A2B41;
+}
+
+footer p {
+    font-family: DFDS-light;
+    color: #ffffff
+}
+/* De artikelen op de index pagina */
+.artikelen {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.index {
+    background-color: #ffffff;
+    margin: 1em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    
+}
+
+article > img {
+    max-width: 100%;
+}
+div > img {
+    max-width: 100%;
+}
+
+.index h2,
+p,a {
+    margin: 1em 1em 1em 1em;
+}
+
+.index {
+    transition: all 0.5s;
+        }
+        .index:hover {
+        transform: scale(1.05);
+
+}
+
+.index a {
+    background-color: #F6861F;
+    font-family: dfds-bold;
+    color: #ffffff;
+    box-shadow: 0px 2px 5px #000000;
+    text-decoration: none;
+    padding: 0.1em 0.2em;
+}
+
+.index a:hover {
+    background-color: #F29E57;
+    box-shadow: 0px 0px 0px 0px #F29E57;
+}			
+
+/* Aanmeldpagina */
+legend {
+    font-family: dfds-bold;
+}
+
+label {
+    font-family: dfds-light;
+}
+
+.aanmelden {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  max-width: 50%;
+  margin: 2em auto;
+  padding: 2em 2em;
+  background: #ffffff;
+}
+
+.aanmelden fieldset {
+    border: 0;
+   margin: 1em;
+}
+
+/*
+.aanmelden fieldset a:first-child {
+    margin-bottom: 2em;
+}
+*/
+
+.aanmelden input {
+  margin-top: 0.5em; 
+  margin-bottom: 2em;
+  height: auto;
+  padding: 1em;
+  width: 97%;
+  border: none;
+  font-size: 1em;
+  background-color: #eaedee;
+  color: #8a97a0;
+}
+
+.aanmelden button {
+   padding: 1em;
+   width: 100%;
+   border: none;
+   margin-bottom: 1em;
+   margin-top: 1em;
+   font-size: 1em;
+   background-color: #F6861F;
+   font-family: dfds-bold;
+   color: #ffffff;
+   box-shadow: 0px 2px 5px #000000;
+}
+
+.aanmelden button:hover {
+    background-color: #F29E57;
+    box-shadow: 0px 0px 0px 0px #F29E57;
+}
+
+.acc {
+   color: #0098FF;
+    margin-left: 0;
+    margin-bottom: 2em;
+}
+/* Detail pagina Moe */
+#detail {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.moeh1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 10.0vh;
+    text-align: center;
+    margin: 0;
+}
+
+.stonedh1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 7.0vh;
+    text-align: center;
+    margin: 0;
+}
+
+#detail h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.0vh;
+    font-style: italic;
+    text-align: center;
+}
+
+#detail p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+    line-height: 120%;
+}
+/* Verhalen */
+#mobiel {
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+}
+
+#tablet {
+    margin-top: 1em;
+    display: none;
+    width: 100%;
+}
+
+#desktop {
+    margin-top: 1em;
+    display: none;
+    width: 100%;
+}
+
+/*Detail pagina Stoned*/
+#stoned p{
+mix-blend-mode: luminosity;
+
+}
+#stoned {
+    -webkit-transition: background-color 2.5s linear;
+    -moz-transition: background-color 2.5s linear;
+    -o-transition: background-color 2.5s linear;
+    -ms-transition: background-color 2.5s linear;
+    transition: background-color 2.5s linear;
+}
+
+.pink {
+    background-color: #fd00ff;
+}
+
+.yellow {
+    background-color: 	#fdff00;
+}
+
+.green{
+    background-color: 	#00ff38;
+}
+
+.blue1 {
+    background-color: #00f9ff;
+}
+
+.blue2 {
+    background-color: #3c00ff;
+}
+/* Breakpoints */
+
+@media screen and (min-width: 44em) {
+    .artikelen {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .index {
+        max-width: 45%;
+    }
+    #detail {
+        max-width: 80%;
+    }
+    header img {
+        width: 20%;
+    }
+}
+@media screen and (min-width: 67.5em) {
+    .artikelen {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .index {
+        max-width: 30%
+    }
+    #detail {
+        max-width: 70%;
+    }
+    header img {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 44em) {
+    .aanmelden {
+        max-width: 100%;
+    }
+    #sorteerlijst, #filterlijst {
+        padding: 1em;
+    }
+}
+
+/* Media Queries Verhalen */
+
+@media screen and (min-width: 44em) {
+    #mobiel{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+}
+@media screen and (min-width: 67.5em) {
+     #mobiel{
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+    #desktop{
+        display: block;
+    }
+}
